@@ -17,7 +17,7 @@ class Team
   string coach_name;
   string home_city;
   int score;
-  int timeout_count;
+  double timeout_count;
   int shotsOnGoal; 
   bool home_status;
 
@@ -29,7 +29,7 @@ class Team
         name = "DefaultTeamName";
         shotsOnGoal = 0;
         coach_name = "DefaultCoachName";
-        
+
 
       }
 
@@ -38,7 +38,9 @@ class Team
   void set_coachName(string scN){coach_name =scN;}
   void set_homeCity(string hC){ home_city = hC; }
   void set_Score(int s) {score = s; }
-  void set_TimeoutCount(int tC){ timeout_count = tC; }
+  void set_TimeoutCount(double tC){ timeout_count = tC; }
+  void set_HomeStatus(bool hs) {home_status = hs;}
+  void setShotsOnGoal(int sog) { shotsOnGoal = sog; }
  
 
 
